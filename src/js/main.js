@@ -33,6 +33,11 @@ window.ua = (function () {
       var pxPerRem = document.documentElement.clientWidth * dpr / 750
       document.getElementById('weixinImg').style.width = pxPerRem + 'px'
     }
+
+    if (!ua.mobile){
+      document.getElementById('show-logo').style.display = 'none'
+      document.getElementById('show-code').style.display = ''
+    }
   }
 })()
 
